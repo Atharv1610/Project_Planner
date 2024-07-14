@@ -1,11 +1,11 @@
 {
-    "c79782d5-d6a6-40c9-8eb4-b67dcc843a3d": {
+    "c42f4c08-2ba5-420f-a011-48b0129436d1": {
         "name": "team_alpha",
         "description": "Updated Alpha team for project",
-        "creation_time": "2024-07-14T22:41:36.826128",
+        "creation_time": "2024-07-14T22:59:38.226619",
         "admin": "admin_user_id",
         "users": [
-            "user2"
+            "63c28749-4820-4cc3-b99b-7dfda4b53ded"
         ]
     }
 }
