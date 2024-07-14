@@ -1,0 +1,20 @@
+{
+    "68cfdb02-8738-4b4a-bb91-8e8df607618a": {
+        "name": "Board Alpha",
+        "description": "Board for Alpha project",
+        "team_id": "team_alpha",
+        "creation_time": "2024-07-14T22:44:29.342364",
+        "status": "CLOSED",
+        "tasks": [
+            {
+                "id": "8fd3c168-106e-4542-bd2f-51ef503c78ca",
+                "title": "Task 1",
+                "description": "First task for Board Alpha",
+                "user_id": "user_alpha",
+                "creation_time": "2024-07-14T22:44:29.343441",
+                "status": "COMPLETE"
+            }
+        ],
+        "end_time": "2024-07-14T22:44:29.345436"
+    }
+}
