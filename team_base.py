@@ -137,7 +137,7 @@ class TeamBase:
             return json.dumps({"error": "adding these users exceeds the maximum of 50 users"})
         
         team["users"].extend(user_ids)
-        team["users"] = list(set(team["users"]))  # Ensure uniqueness
+        team["users"] = list(set(team["users"]))  
         self.save_teams()
         return json.dumps({"status": "success"})
     
@@ -187,23 +187,21 @@ if "id" in response_data_team:
     request_describe_team = json.dumps({"id": team_id})
     print(team_base.describe_team(request_describe_team))
        
-    # Update team
+
     request_update_team = json.dumps({"id": team_id, "team": {"description": "Updated Alpha team for project"}})
     print(team_base.update_team(request_update_team))
     
-    # Add users to team
+
     request_add_users = json.dumps({"id": team_id, "users": ["b57fb95c-6560-4aac-aec7-4d485e2bb00c", "63c28749-4820-4cc3-b99b-7dfda4b53ded"]})
     print(team_base.add_users_to_team(request_add_users))
-    
-    # List team users
+
     request_list_team_users = json.dumps({"id": team_id})
     print(team_base.list_team_users(request_list_team_users))
     
-    # Remove users from team
+
     request_remove_users = json.dumps({"id": team_id, "users": ["b57fb95c-6560-4aac-aec7-4d485e2bb00c"]})
     print(team_base.remove_users_from_team(request_remove_users))
     
-    # List team users after removal
     print(team_base.list_team_users(request_list_team_users))
 else:
     print("Team creation failed:", response_create_team)
